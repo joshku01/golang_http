@@ -1,0 +1,48 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "contact": {},
+        "license": {}
+    },
+    "paths": {
+        "/api/ping": {
+            "get": {
+                "description": "測試Golang Swagger Open Api",
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "Api"
+                ],
+                "summary": "[後台]測試Api",
+                "responses": {
+                    "200": {
+                        "description": "成功",
+                        "schema": {
+                            "$ref": "#/definitions/global.APIResult"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "global.APIResult": {
+            "type": "object",
+            "properties": {
+                "error_code": {
+                    "type": "integer"
+                },
+                "error_msg": {
+                    "type": "string"
+                },
+                "log_id": {
+                    "type": "string"
+                },
+                "result": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}

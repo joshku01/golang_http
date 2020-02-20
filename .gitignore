@@ -18,7 +18,6 @@
 /tmp/*
 /upload
 /dump.rdb
-/docs/*
 /Redis/*
 
 ### Govendor ###
