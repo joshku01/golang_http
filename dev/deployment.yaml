@@ -1,16 +1,16 @@
 apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: golang-http
+  name: golang-http-dev
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: golang-http
+      app: golang-http-dev
   template:
     metadata:
       labels:
-        app: golang-http
+        app: golang-http-dev
     spec:
       containers:
         - name: hello-gin

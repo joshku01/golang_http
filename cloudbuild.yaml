@@ -31,11 +31,7 @@ steps:
   # 更新容易
   - name: 'gcr.io/cloud-builders/kubectl'
     id: Create k8s app
-    args:
-      - 'set'
-      - 'image'
-      - 'deployment/${_DEPLOYMENT}'
-      - 'golang-http=gcr.io/$PROJECT_ID/${_IMAGE}'
+    args: [ 'apply','-f','dev/deployment.yaml' ]
     env:
       - 'CLOUDSDK_COMPUTE_ZONE=${_ZONE}'
       - 'CLOUDSDK_CONTAINER_CLUSTER=${_CLUSTER}'
@@ -44,5 +40,5 @@ timeout: 600s
 substitutions:
   _ZONE: asia-east1-b
   _CLUSTER: k8s-cluster-1
-  _IMAGE: golang-http
+  _IMAGE: golang-http-dev
   _DEPLOYMENT: golang-http-dev
