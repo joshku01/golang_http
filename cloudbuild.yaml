@@ -35,7 +35,7 @@ steps:
       - 'set'
       - 'image'
       - 'deployment/${_DEPLOYMENT}'
-      - 'hello-gin=gcr.io/$PROJECT_ID/${_IMAGE}'
+      - '${_IMAGE}=gcr.io/$PROJECT_ID/${_IMAGE}'
     env:
       - 'CLOUDSDK_COMPUTE_ZONE=${_ZONE}'
       - 'CLOUDSDK_CONTAINER_CLUSTER=${_CLUSTER}'
