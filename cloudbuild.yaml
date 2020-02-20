@@ -31,7 +31,11 @@ steps:
   # 更新容易
   - name: 'gcr.io/cloud-builders/kubectl'
     id: Create k8s app
-    args: [ 'apply','-f','dev/deployment.yaml' ]
+    args:
+      - 'set'
+      - 'image'
+      - 'deployment/${_DEPLOYMENT}'
+      - 'golang-http=gcr.io/$PROJECT_ID/${_IMAGE}'
     env:
       - 'CLOUDSDK_COMPUTE_ZONE=${_ZONE}'
       - 'CLOUDSDK_CONTAINER_CLUSTER=${_CLUSTER}'
