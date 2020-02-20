@@ -40,6 +40,7 @@ steps:
       - 'CLOUDSDK_COMPUTE_ZONE=${_ZONE}'
       - 'CLOUDSDK_CONTAINER_CLUSTER=${_CLUSTER}'
 timeout: 600s
+# 設定檔變數
 substitutions:
   _ZONE: asia-east1-b
   _CLUSTER: k8s-cluster-1
