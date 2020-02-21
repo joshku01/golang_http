@@ -42,6 +42,6 @@ steps:
 timeout: 600s
 substitutions:
   _ZONE: asia-east1-b
-  _CLUSTER: k8s-cluster-1
+  _CLUSTER: k8s-cluster-2
   _IMAGE: golang-http
   _DEPLOYMENT: golang-http
