@@ -14,6 +14,6 @@ import (
 // @Router /api/ping [GET]
 func ApiRoute(c *gin.Context) {
 	var data string
-	data = "pong test data"
+	data = "pong test data json"
 	c.JSON(http.StatusOK, data)
 }
