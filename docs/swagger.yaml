@@ -1,0 +1,30 @@
+definitions:
+  global.APIResult:
+    properties:
+      error_code:
+        type: integer
+      error_msg:
+        type: string
+      log_id:
+        type: string
+      result:
+        type: object
+    type: object
+info:
+  contact: {}
+  license: {}
+paths:
+  /api/ping:
+    get:
+      description: 測試Golang Swagger Open Api
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 成功
+          schema:
+            $ref: '#/definitions/global.APIResult'
+      summary: '[後台]測試Api'
+      tags:
+      - Api
+swagger: "2.0"

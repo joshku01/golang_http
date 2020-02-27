@@ -43,6 +43,7 @@ timeout: 600s
 # 設定檔變數
 substitutions:
   _ZONE: asia-east1-b
-  _CLUSTER: k8s-cluster-1
-  _IMAGE: golang-http-dev
-  _DEPLOYMENT: golang-http-dev
+  _CLUSTER: k8s-cluster-2
+  _IMAGE: golang-http
+  _DEPLOYMENT: golang-http
+

@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: golang-http-dev
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: golang-http-dev
