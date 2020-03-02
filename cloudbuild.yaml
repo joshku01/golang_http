@@ -50,3 +50,5 @@ substitutions:
   _DEPLOYMENT: golang-http
 images:
   - 'gcr.io/$PROJECT_ID/${_IMAGE}:latest'
+
+
