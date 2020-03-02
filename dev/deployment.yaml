@@ -13,7 +13,7 @@ spec:
         app: golang-http
     spec:
       containers:
-        - name: hello-gin
+        - name: golang-http
           image: gcr.io/k8s-0529/golang-http:latest
           ports:
             - containerPort: 8080
