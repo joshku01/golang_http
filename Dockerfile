@@ -15,7 +15,7 @@ WORKDIR /app/release
 ADD . .
 
 # Build the command inside the container.
-RUN CGO_ENABLED=0 GOOS=linux go build -v -o golang-http
+RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-s -w" -installsuffix cgo -o golang-http
 
 # Use a Docker multi-stage build to create a lean production image.
 # https://docs.docker.com/develop/develop-images/multistage-build/#use-multi-stage-builds
