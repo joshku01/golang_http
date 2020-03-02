@@ -1,9 +1,9 @@
 steps:
   # Build the module.
   # 編譯go 服務
-  - name: golang
-    args: ['go', 'build', '.']
-    env: ['GO111MODULE=on']
+  #  - name: golang
+  #    args: ['go', 'build', '.']
+  #    env: ['GO111MODULE=on']
   #  # This step init go app use go install .
   #  # 安裝app
   #  - name: 'gcr.io/cloud-builders/go:alpine'
