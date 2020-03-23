@@ -2,7 +2,7 @@
 FROM golang:1.14 as builder
 
 ENV GO111MODULE=on
-ENV GOPROXY http://34.80.104.128:3000
+ENV GOPROXY http://10.63.244.194:3000
 
 WORKDIR /app/cache
 
