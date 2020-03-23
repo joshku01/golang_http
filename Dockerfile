@@ -1,8 +1,8 @@
 # 第一層基底
-FROM golang:1.12 as builder
+FROM golang:1.14 as builder
 
 ENV GO111MODULE=on
-ENV GOPROXY https://goproxy.io
+ENV GOPROXY http://127.0.0.1:3000
 
 WORKDIR /app/cache
 
