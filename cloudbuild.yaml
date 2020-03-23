@@ -40,7 +40,7 @@ timeout: 600s
 substitutions:
   _ZONE: asia-east1-b
   _CLUSTER: k8s-cluster-3
-  _IMAGE: golang-http
+  _IMAGE: golang-http-dev2
   _DEPLOYMENT: golang-http
 images: ['gcr.io/$PROJECT_ID/${_IMAGE}:latest']
 

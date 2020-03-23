@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
         - name: golang-http
-          image: gcr.io/k8s-0529/golang-http:latest
+          image: gcr.io/k8s-0529/golang-http-dev2:v1
           ports:
-            - containerPort: 8080
+            - containerPort: 8082
           env:
             - name: "PORT"
-              value: "8080"
+              value: "8082"

@@ -9,5 +9,5 @@ func main() {
 
 	r := gin.Default()
 	Route.Router(r)
-	r.Run(":8080")
+	r.Run(":8082")
 }
