@@ -5,7 +5,7 @@ import (
 	"net/http"
 )
 
-// API [後台]測試Api
+// API [後台]測試Apigi
 // @Summary [後台]測試Api
 // @description 測試Golang Swagger Open Api
 // @Tags Api
